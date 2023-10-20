@@ -1,2 +1,25 @@
-/* Your CSS styles here! */
+body {
+  background-color: transparent;
+  background-image: url("images/vertical_gradient.png");
+  background-repeat: repeat-x;
+}
 
+header {
+  box-sizing: border-box;
+  width: 80%;
+  background-color: #fff;
+  font-size: 4rem;
+  opacity: 0.5;
+  padding: 4%;
+  margin: 5% 10%;
+  border: 10px solid #98c6eb;
+  text-align: center;
+}
+
+.top-img {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 45%;
+  opacity: 0.8;
+}
