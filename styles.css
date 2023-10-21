@@ -25,6 +25,8 @@ body {
   justify-content: space-around;
   flex-flow: row wrap;
   align-items: stretch;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .small {
@@ -61,6 +63,13 @@ header {
   border: 10px solid #98c6eb;
   border-bottom: 0;
   text-align: left;
+}
+
+footer {
+  border-top: 10px solid #e0edf9;
+  background-color: #98c6eb;
+  margin: 1% 0 0 0;
+  padding: 1%;
 }
 
 .header-content {
@@ -135,7 +144,8 @@ h1 {
   border: 5px solid #88b2d3;
 }
 
-h2 {
+h2,
+h3 {
   margin-top: 2%;
   padding: 0;
 }
@@ -273,8 +283,20 @@ p.grid-item {
 form,
 section {
   box-sizing: border-box;
-  margin: 2%;
+  margin: 1%;
   padding: 1%;
+}
+
+section.flex-address-box {
+  background-color: #e0edf9;
+  border: 5px solid #98c6eb;
+  width: 15%;
+  font-size: 1.3rem;
+}
+
+section.flex-info-box {
+  background-color: #e0edf9;
+  border: 5px solid #98c6eb;
 }
 
 form {
@@ -286,7 +308,7 @@ section {
 }
 
 address {
-  margin-top: 2%;
+  margin-top: 10%;
 }
 
 /* media query additional styles */
