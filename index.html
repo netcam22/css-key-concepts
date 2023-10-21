@@ -10,7 +10,7 @@
   <body>
     <container class="sticky-container">
       <header>
-        <span class="header-content flex_content">
+        <span class="header-content flex-content">
           <a class="small" href="#">Tech Returners Surgery</a>
           <a class="header-sub small" href="tel:03330509138">0333 050 9138</a>
         </span>
@@ -40,9 +40,9 @@
     <h1>Covid-19 Information</h1>
 
     <h2><strong>COVID Restriction Update</strong></h2>
-    <section class="grid-container">
+    <section class="move-background grid-container">
       <p class="move move-first grid-item">
-        Throughout the pandemic we have strove to make the surgery as safe as
+        Throughout the pandemic we have striven to make the surgery as safe as
         possible for all our patients and staff, we will continue to do so.
       </p>
       <img
@@ -68,86 +68,87 @@
         alt="female doctor looking to right"
         src="./images/line-drawn-doctor.png" />
     </section>
+    <container class="flex-content">
+      <section class="small">
+        <h3>Welcome to the Tech Returners Surgery!</h3>
 
-    <section>
-      <h3>Welcome to the Tech Returners Surgery!</h3>
+        <address>
+          The Tech Returners Surgery,<br />
+          115 Mancunian Way,<br />
+          Manchester,<br />
+          M20 3PX
+        </address>
+      </section>
 
-      <address>
-        The Tech Returners Surgery,<br />
-        115 Mancunian Way,<br />
-        Manchester,<br />
-        M20 3PX
-      </address>
-    </section>
+      <section class="double">
+        <h2>How to use Ask My Doc?</h2>
 
-    <section>
-      <h2>How to use Ask My Doc?</h2>
+        <video controls width="100%">
+          <source src="#" type="video/webm" />
+          <source src="#" type="video/mp4" />
 
-      <video controls width="250">
-        <source src="#" type="video/webm" />
-        <source src="#" type="video/mp4" />
+          <track
+            kind="captions"
+            srclang="en"
+            src="./ask_my_doc_transcript.vtt"
+            default />
 
-        <track
-          kind="captions"
-          srclang="en"
-          src="./ask_my_doc_transcript.vtt"
-          default />
+          Sorry, your browser doesn't support embedded videos.
+        </video>
+      </section>
 
-        Sorry, your browser doesn't support embedded videos.
-      </video>
-    </section>
+      <section>
+        <h2>Need advice or have some feedback for us?</h2>
 
-    <section>
-      <h2>Need advice or have some feedback for us?</h2>
+        <form class="triple">
+          <fieldset>
+            <legend>
+              Send us a message by filling out the form below and one of our
+              Receptionists will be in touch:
+            </legend>
 
-      <form>
-        <fieldset>
-          <legend>
-            Send us a message by filling out the form below and one of our
-            Receptionists will be in touch:
-          </legend>
+            <p>Are you completing this form on behalf of:</p>
 
-          <p>Are you completing this form on behalf of:</p>
+            <label for="self">Yourself </label>
+            <input type="checkbox" id="self" name="self" />
 
-          <label for="self">Yourself </label>
-          <input type="checkbox" id="self" name="self" />
+            <label for="another">Someone else </label>
+            <input type="checkbox" id="another" name="another" />
 
-          <label for="another">Someone else </label>
-          <input type="checkbox" id="another" name="another" />
+            <div>
+              <label for="fname">First Name </label>
+              <input type="text" id="fname" name="fname" required />
+            </div>
 
-          <div>
-            <label for="fname">First Name </label>
-            <input type="text" id="fname" name="fname" required />
-          </div>
+            <div>
+              <label for="lname">Last Name </label>
+              <input type="text" id="lname" name="lname" required />
+            </div>
 
-          <div>
-            <label for="lname">Last Name </label>
-            <input type="text" id="lname" name="lname" required />
-          </div>
+            <div>
+              <label for="dob">Date of Birth </label>
+              <input type="date" id="dob" name="dob" required />
+            </div>
 
-          <div>
-            <label for="dob">Date of Birth </label>
-            <input type="date" id="dob" name="dob" required />
-          </div>
+            <div>
+              <label for="telephone">Telephone Number: </label>
+              <input type="tel" id="telephone" name="telephone" required />
+            </div>
 
-          <div>
-            <label for="telephone">Telephone Number: </label>
-            <input type="tel" id="telephone" name="telephone" required />
-          </div>
+            <div>
+              <label for="email">Email: </label>
+              <input type="email" id="email" name="email" required />
+            </div>
 
-          <div>
-            <label for="email">Email: </label>
-            <input type="email" id="email" name="email" required />
-          </div>
+            <div>
+              <label for="message">Your query or message: </label>
+              <input type="text" id="message" name="message" required />
+            </div>
 
-          <div>
-            <label for="message">Your query or message: </label>
-            <input type="text" id="message" name="message" required />
-          </div>
-
-          <input type="submit" value="Submit" />
-        </fieldset>
-      </form>
-    </section>
+            <input type="submit" value="Submit" />
+          </fieldset>
+        </form>
+      </section>
+    </container>
   </body>
 </html>

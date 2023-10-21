@@ -49,6 +49,7 @@ container.sticky-container {
   left: 0;
   width: 100%;
   box-sizing: border-box;
+  z-index: 100;
 }
 
 /*header and top image*/
@@ -86,6 +87,7 @@ a.header-sub.small {
   right: 0;
   width: 40%;
   opacity: 0.7;
+  z-index: 1000;
 }
 
 nav {
@@ -128,7 +130,7 @@ h3 {
 h1 {
   box-sizing: border-box;
   text-align: center;
-  color: #fff;
+  color: rgb(250, 213, 156);
   background-color: #4c6375;
   border: 5px solid #88b2d3;
 }
@@ -148,7 +150,6 @@ input.search-box {
   box-sizing: border-box;
   display: grid;
   grid-template-columns: auto auto auto auto auto auto;
-  background-color: transparent;
   padding: 1%;
   margin: 1%;
   border: 5px solid #e0edf9;
@@ -184,18 +185,28 @@ p.grid-item {
 }
 
 .move-first {
-  animation-delay: 1s;
+  animation-delay: 2s;
   animation-name: move-in-from-left;
 }
 
 .move-second {
-  animation-delay: 3s;
+  animation-delay: 5s;
   animation-name: bounce-in;
 }
 
 .move-third {
-  animation-delay: 5s;
+  animation-delay: 8s;
   animation-name: move-in-from-right;
+}
+
+.move-background {
+  background-image: url(images/covid-background.png);
+  animation-delay: 2;
+  animation-name: change-background;
+  animation-duration: 5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  opacity: 1;
 }
 
 @keyframes move-in-from-left {
@@ -243,6 +254,39 @@ p.grid-item {
     transform: translateX(-10%);
     opacity: 1;
   }
+}
+
+@keyframes change-background {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+    background-color: rgba(250, 213, 156, 0.7);
+  }
+  100% {
+    background-image: none;
+    background-color: rgb(250, 213, 156);
+  }
+}
+
+form,
+section {
+  box-sizing: border-box;
+  margin: 2%;
+  padding: 1%;
+}
+
+form {
+  background-color: rgb(250, 213, 156);
+}
+
+section {
+  border: 5px solid #e0edf9;
+}
+
+address {
+  margin-top: 2%;
 }
 
 /* media query additional styles */
