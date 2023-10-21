@@ -68,7 +68,7 @@ header {
 footer {
   border-top: 10px solid #e0edf9;
   background-color: #98c6eb;
-  margin: 1% 0 0 0;
+  margin: 0;
   padding: 1%;
 }
 
@@ -117,7 +117,7 @@ nav ul li {
   padding: 0 1%;
 }
 nav ul li a {
-  font-size: 2em;
+  font-size: 1.8em;
   text-decoration: none;
   font-family: "BenchNine-Bold";
   color: #4c6375;
@@ -132,7 +132,7 @@ h2,
 h3 {
   font-family: "BenchNine-Bold";
   color: #4c6375;
-  margin: 0 1%;
+  margin: 3% 1% 1%;
   padding: 0;
 }
 
@@ -144,16 +144,40 @@ h1 {
   border: 5px solid #88b2d3;
 }
 
-h2,
 h3 {
   margin-top: 2%;
   padding: 0;
 }
 
+img-text-box {
+  padding: 0;
+}
+
+img-text-box img {
+  display: block;
+  width: 7%;
+}
+
+img-text-box h2 {
+  margin-top: 1%;
+  margin-left: 0;
+  position: absolute;
+  width: 7%;
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+img.person {
+  width: 7%;
+  position: sticky;
+}
+
 label.search-box,
 input.search-box {
-  margin: 3% 1% 1% 1%;
+  margin: 1% 1% 1% 1%;
   padding: 0;
+  float: left;
+  position: relative;
 }
 
 .grid-container {
@@ -161,7 +185,7 @@ input.search-box {
   display: grid;
   grid-template-columns: auto auto auto auto auto auto;
   padding: 1%;
-  margin: 1%;
+  margin: 0 1% 0 1%;
   border: 5px solid #e0edf9;
 }
 
@@ -178,8 +202,12 @@ input.search-box {
 p.grid-item {
   position: relative;
   word-wrap: normal;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   margin-left: 10%;
+}
+
+img.grid-item {
+  width: 70%;
 }
 
 .move {
@@ -210,13 +238,24 @@ p.grid-item {
 }
 
 .move-background {
-  background-image: url(images/covid-background.png);
-  animation-delay: 2;
+  background-color: #88b2d3;
+  animation-delay: 2s;
   animation-name: change-background;
   animation-duration: 5s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
   opacity: 1;
+}
+
+.move-across {
+  animation-delay: 2;
+  animation-name: move-across-from-left;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+  opacity: 1;
+  animation-direction: alternate-reverse;
+  animation-timing-function: ease-in-out;
 }
 
 @keyframes move-in-from-left {
@@ -275,8 +314,16 @@ p.grid-item {
     background-color: rgba(250, 213, 156, 0.7);
   }
   100% {
-    background-image: none;
     background-color: rgb(250, 213, 156);
+  }
+}
+
+@keyframes move-across-from-left {
+  0% {
+    transform: translateX(1315%);
+  }
+  100% {
+    transform: translateX(10%);
   }
 }
 
@@ -336,7 +383,7 @@ address {
   }
 
   p.grid-item {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 
   label.search-box,
