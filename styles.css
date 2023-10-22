@@ -39,6 +39,7 @@ body {
   align-items: stretch;
   flex-direction: row;
   flex-wrap: nowrap;
+  margin-top: 4%;
 }
 
 .flex-column {
@@ -141,7 +142,8 @@ nav ul li a:hover {
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
   font-family: "BenchNine-Bold";
   color: var(--dark-grey-blue);
   margin: 3% 1% 1%;
@@ -162,7 +164,8 @@ h2 {
   padding: 0;
 }
 
-h2 {
+h2,
+h3 {
   color: var(--dark-grey-blue);
   text-align: left;
   font-size: 2rem;
@@ -206,22 +209,18 @@ img-text-box {
   position: sticky;
 }
 
-img-text-box img {
-  display: block;
-  width: 7%;
-}
-
-img-text-box h3 {
+img-text-box h4 {
   margin-top: 1%;
   margin-left: 0;
-  position: absolute;
-  width: 7%;
+  width: 15%;
+  position: sticky;
   text-align: center;
-  font-size: 1rem;
+  font-size: 3rem;
+  color: var(--mid-grey-blue);
 }
 
 img.person {
-  width: 7%;
+  width: 15%;
   position: sticky;
 }
 
@@ -369,7 +368,7 @@ img.grid-item {
 
 @keyframes move-across-from-left {
   0% {
-    transform: translateX(1315%);
+    transform: translateX(550%);
   }
   100% {
     transform: translateX(10%);
