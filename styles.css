@@ -1,3 +1,14 @@
+:root {
+  --strong-orange: rgb(243, 126, 0);
+  --mid-orange: rgb(255, 200, 140);
+  --strong-blue: rgb(2, 125, 208);
+  --mid-blue: rgb(203, 226, 245);
+  --light-blue: rgb(224, 237, 249);
+  --mid-grey-blue: rgb(136, 178, 211);
+  --dark-grey-blue: rgb(76, 99, 117);
+  --white: rgb(255, 255, 255);
+}
+
 /* Font: Adams, V(2013).BenchNine[Font].
 http://www.fontsquirrel.com/fonts/benchnine;
 Accessed 15/12/13 */
@@ -56,20 +67,12 @@ container.sticky-container {
 
 /*header and top image*/
 header {
-  background-color: #e0edf9;
+  background-color: var(--light-blue);
   opacity: 1;
   padding: 1% 0;
   margin: 0;
-  border: 10px solid #98c6eb;
   border-bottom: 0;
   text-align: left;
-}
-
-footer {
-  border-top: 10px solid #e0edf9;
-  background-color: #98c6eb;
-  margin: 0;
-  padding: 1%;
 }
 
 .header-content {
@@ -82,12 +85,21 @@ header a {
   padding: 1%;
   text-decoration: none;
   font-family: "BenchNine-Bold";
-  color: #4c6375;
+  color: var(--dark-grey-blue);
+  text-align: left;
 }
 
 a.header-sub.small {
   display: inline;
-  color: #88b2d3;
+  color: var(--mid-grey-blue);
+}
+
+footer {
+  border-top: 10px solid var(--light-blue);
+  background-color: #98c6eb;
+  margin: 0;
+  padding: 1%;
+  font-family: "BenchNine-Regular";
 }
 
 .top-img {
@@ -101,10 +113,8 @@ a.header-sub.small {
 
 nav {
   display: block;
-  background-color: #fff;
-  border: 10px solid #98c6eb;
-  border-top: 0;
-  box-shadow: 1rem 1rem 1rem #88b2d3;
+  background-color: var(--mid-blue);
+  box-shadow: 3px 3px 3px var(--mid-grey-blue);
 }
 
 nav ul {
@@ -120,18 +130,18 @@ nav ul li a {
   font-size: 1.8em;
   text-decoration: none;
   font-family: "BenchNine-Bold";
-  color: #4c6375;
+  color: var(--dark-grey-blue);
 }
 
 nav ul li a:hover {
-  color: #98c6eb;
+  color: var(--strong-orange);
 }
 
 h1,
 h2,
 h3 {
   font-family: "BenchNine-Bold";
-  color: #4c6375;
+  color: var(--dark-grey-blue);
   margin: 3% 1% 1%;
   padding: 0;
 }
@@ -139,9 +149,9 @@ h3 {
 h1 {
   box-sizing: border-box;
   text-align: center;
-  color: rgb(250, 213, 156);
-  background-color: #4c6375;
-  border: 5px solid #88b2d3;
+  color: rgb(255, 200, 140);
+  background-color: var(--dark-grey-blue);
+  border: 5px solid var(--mid-grey-blue);
 }
 
 h3 {
@@ -180,20 +190,37 @@ input.search-box {
   position: relative;
 }
 
+label.search-box {
+  font-family: "BenchNine-Regular";
+}
+
+.grid-column-container {
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 0;
+  margin: 0;
+}
+
+.grid-column {
+  background-color: transparent;
+  text-align: left;
+}
+
 .grid-container {
   box-sizing: border-box;
   display: grid;
   grid-template-columns: auto auto auto auto auto auto;
   padding: 1%;
   margin: 0 1% 0 1%;
-  border: 5px solid #e0edf9;
+  border: 5px solid var(--light-blue);
 }
 
 .grid-item {
   margin-top: 0;
   padding: 10%;
   padding-bottom: 0;
-  background-color: #fff;
+  background-color: var(--white);
   background-repeat: no-repeat;
   background-size: contain;
   text-align: left;
@@ -223,22 +250,22 @@ img.grid-item {
 }
 
 .move-first {
-  animation-delay: 2s;
+  animation-delay: 1s;
   animation-name: move-in-from-left;
 }
 
 .move-second {
-  animation-delay: 5s;
+  animation-delay: 4s;
   animation-name: bounce-in;
 }
 
 .move-third {
-  animation-delay: 8s;
+  animation-delay: 7s;
   animation-name: move-in-from-right;
 }
 
 .move-background {
-  background-color: #88b2d3;
+  background-color: transparent;
   animation-delay: 2s;
   animation-name: change-background;
   animation-duration: 5s;
@@ -250,7 +277,7 @@ img.grid-item {
 .move-across {
   animation-delay: 2;
   animation-name: move-across-from-left;
-  animation-duration: 5s;
+  animation-duration: 10s;
   animation-iteration-count: infinite;
   animation-fill-mode: both;
   opacity: 1;
@@ -309,12 +336,12 @@ img.grid-item {
   0% {
     opacity: 1;
   }
-  50% {
-    opacity: 0.7;
-    background-color: rgba(250, 213, 156, 0.7);
+  30% {
+    opacity: 0.8;
+    background-color: rgba(255, 200, 140, 0.7);
   }
   100% {
-    background-color: rgb(250, 213, 156);
+    background-color: var(--mid-orange);
   }
 }
 
@@ -335,23 +362,23 @@ section {
 }
 
 section.flex-address-box {
-  background-color: #e0edf9;
+  background-color: var(--light-blue);
   border: 5px solid #98c6eb;
   width: 15%;
   font-size: 1.3rem;
 }
 
 section.flex-info-box {
-  background-color: #e0edf9;
+  background-color: var(--light-blue);
   border: 5px solid #98c6eb;
 }
 
 form {
-  background-color: rgb(250, 213, 156);
+  background-color: var(--mid-orange);
 }
 
 section {
-  border: 5px solid #e0edf9;
+  border: 5px solid var(--light-blue);
 }
 
 address {
