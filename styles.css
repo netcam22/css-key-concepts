@@ -361,8 +361,7 @@ img.grid-item {
     transform: translateX(10%);
   }
 }
-/*forms*/
-form,
+/*sections*/
 section {
   box-sizing: border-box;
   margin: 1%;
@@ -377,9 +376,12 @@ section.flex-video-box {
   background-color: var(--light-blue);
   z-index: -100;
 }
-
+/*forms and form fields*/
 form {
   background-color: var(--light-blue);
+  box-sizing: border-box;
+  margin: 1%;
+  padding: 1%;
 }
 
 input {
@@ -481,7 +483,7 @@ input[type="date"]:focus {
 }
 
 input[type="submit"] {
-  background-color: var(--mid-grey-blue);
+  background-color: var(--dark-grey-blue);
   border: none;
   color: white;
   padding: 1%;
@@ -513,15 +515,16 @@ input.search-box[type="search"] {
 fieldset {
   background-color: var(--light-blue);
   border: none;
+  padding: 1%;
 }
 
 legend,
 fieldset > p {
   background-color: transparent;
   color: var(--dark-grey-blue);
-  padding: 0;
+  padding: 1%;
   font-family: "BenchNine-Bold";
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 /* media query additional styles */
