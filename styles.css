@@ -62,7 +62,7 @@ body {
   flex-grow: 4;
 }
 
-container.sticky-container {
+sticky-container {
   position: sticky;
   top: 0;
   left: 0;
@@ -372,6 +372,10 @@ section.flex-info-box {
   background-color: var(--light-blue);
 }
 
+video {
+  width: 100%;
+}
+
 section.flex-video-box {
   background-color: var(--light-blue);
   z-index: -100;
@@ -397,12 +401,14 @@ input {
 
 .col-25 {
   float: left;
+  clear: both;
   width: 25%;
   margin-top: 6px;
 }
 
 .col-75 {
   float: left;
+  clear: both;
   width: 75%;
   margin-top: 6px;
 }
@@ -537,7 +543,6 @@ fieldset > p {
   .flex-content {
     flex-direction: column;
   }
-
   p.grid-item {
     font-size: 1rem;
     margin-bottom: 5%;
