@@ -229,7 +229,7 @@ img-text-box h4 {
   position: sticky;
   text-align: center;
   font-size: 2rem;
-  color: var(--mid-grey-blue);
+  color: var(--dark-grey-blue);
 }
 
 img.person {
