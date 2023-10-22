@@ -387,7 +387,7 @@ form {
 }
 
 input {
-  width: 80%;
+  width: 100%;
   padding: 2px;
   margin: 1% auto;
   box-sizing: border-box;
@@ -395,6 +395,25 @@ input {
   border-radius: 4px;
   background-color: var(--white);
   color: var(--dark-grey-blue);
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .checkbox-container {
@@ -479,9 +498,8 @@ label {
   font-family: "BenchNine-Regular";
   font-size: 1.2rem;
   line-height: 1.2rem;
-  margin: 1%;
-  padding: 1%;
   color: var(--dark-grey-blue);
+  text-wrap: nowrap;
 }
 
 label.search-box,
