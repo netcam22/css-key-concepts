@@ -105,7 +105,7 @@ a.header-sub.small:hover {
   position: fixed;
   top: 0;
   right: 0;
-  width: 40%;
+  width: 30%;
   opacity: 0.7;
 }
 
@@ -387,7 +387,7 @@ form {
 }
 
 input {
-  width: 200px;
+  width: 80%;
   padding: 2px;
   margin: 1% auto;
   box-sizing: border-box;
@@ -456,8 +456,12 @@ input {
   transform: rotate(45deg);
 }
 
-input[type="text"]:focus {
-  background-color: var(--mid-blue);
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="search"]:focus,
+input[type="date"]:focus {
+  background-color: var(--mid-orange);
 }
 
 input[type="submit"] {
@@ -481,19 +485,12 @@ label {
 }
 
 label.search-box,
-input.search-box {
+input.search-box[type="search"] {
   margin: 1%;
   padding: 5px;
   float: right;
   position: relative;
   background-color: var(--light-blue);
-}
-
-input.search-box {
-  background-color: var(--white);
-  width: 200px;
-  padding: 5px;
-  border: 3px solid var(--dark-grey-blue);
 }
 
 fieldset {
@@ -517,17 +514,8 @@ fieldset > p {
     line-height: 5rem;
   }
 
-  .top-img {
-    width: 50%;
-  }
-
   p.grid-item {
     font-size: 1rem;
-  }
-
-  .top-img {
-    width: 50%;
-    opacity: 0.3;
   }
 
   @media only screen and (max-width: 768px) {
