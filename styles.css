@@ -67,6 +67,7 @@ container.sticky-container {
   top: 0;
   left: 0;
   box-sizing: border-box;
+  z-index: 1000;
 }
 /*header, footer, address and top image*/
 header {
@@ -418,6 +419,7 @@ input {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  z-index: 1;
 }
 
 .checkbox-container input[type="checkbox"] {
