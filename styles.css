@@ -117,7 +117,8 @@ nav {
   display: block;
   background-color: var(--light-blue);
   box-shadow: 3px 3px 3px var(--mid-grey-blue);
-  z-index: 700;
+  z-index: 1500;
+  opacity: 1;
 }
 
 nav ul {
@@ -245,6 +246,8 @@ column-box {
   grid-template-columns: auto auto auto auto auto auto;
   padding: 1%;
   margin: 0 1% 0 1%;
+  z-index: -1;
+  position: relative;
 }
 
 .grid-item {
