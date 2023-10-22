@@ -393,7 +393,7 @@ input {
   padding: 2px;
   margin: 1% auto;
   box-sizing: border-box;
-  border: 1px solid var(--mid-orange);
+  border: 2px solid var(--mid-grey-blue);
   border-radius: 4px;
   background-color: var(--white);
   color: var(--dark-grey-blue);
@@ -507,15 +507,12 @@ label {
   text-wrap: nowrap;
 }
 
-label.search-box,
-input.search-box[type="search"] {
-  width: 70%;
-  margin: 1%;
-  padding: 5px;
-  float: right;
+label.search-box {
+  margin: 0;
+  padding: 2%;
+  text-align: left;
+  float: left;
   clear: both;
-  position: relative;
-  background-color: var(--light-blue);
 }
 
 fieldset {
