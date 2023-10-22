@@ -115,6 +115,7 @@ footer {
   float: left;
   clear: none;
   font-size: 1.2rem;
+  z-index: 10;
 }
 
 address {
@@ -158,6 +159,7 @@ nav ul li a {
   text-decoration: none;
   font-family: "BenchNine-Bold";
   color: var(--dark-grey-blue);
+  z-index: 1100;
 }
 
 nav ul li a:hover {
@@ -218,6 +220,7 @@ column-box {
 img-text-box {
   padding: 0;
   position: sticky;
+  z-index: 100;
 }
 
 img-text-box h4 {
@@ -538,6 +541,10 @@ fieldset > p {
 
   img.grid-item {
     width: 100%;
+  }
+
+  .top-img {
+    width: 30%;
   }
 
   @media only screen and (max-width: 768px) {
