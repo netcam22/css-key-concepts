@@ -108,12 +108,16 @@
 
                   <p>Are you completing this form on behalf of:</p>
 
-                  <label for="self">Yourself </label>
-                  <input type="checkbox" id="self" name="self" />
+                  <label class="checkbox-container">Yourself
+                    <input  type="checkbox" id="self" name="self" />
+                    <span class="checkmark"></span>
+                  </label>
 
-                  <label for="another">Someone else </label>
-                  <input type="checkbox" id="another" name="another" />
-
+                  <label class="checkbox-container">Someone else
+                    <input  type="checkbox" id="another" name="another" />
+                    <span class="checkmark"></span>
+                  </label>
+                  
                   <div>
                     <label for="fname">First Name </label>
                     <input type="text" id="fname" name="fname" required />
