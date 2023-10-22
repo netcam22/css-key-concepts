@@ -116,8 +116,7 @@ nav {
   display: block;
   background-color: var(--light-blue);
   box-shadow: 3px 3px 3px var(--mid-grey-blue);
-  z-index: 5000;
-  position: relative;
+  z-index: 700;
 }
 
 nav ul {
@@ -172,32 +171,39 @@ h2 {
   margin-left: calc(2% + 5px);
 }
 
-address {
-  position: sticky;
-  bottom: 0;
-  z-index: -200;
-  font-size: 2rem;
-  line-height: 2rem;
-  padding: 1%;
-  margin: 1% 10% 1% 1%;
-  font-family: "BenchNine-Bold";
-  color: var(--mid-blue);
-  text-align: left;
-}
-
 footer {
   border-top: 10px solid var(--light-blue);
   background-color: #98c6eb;
   margin: 0;
-  padding: 1%;
+  padding: 0;
   font-family: "BenchNine-Regular";
   position: fixed;
   bottom: 0;
   width: 100%;
 }
 
+address,
+.copyright {
+  margin: 0;
+  padding: 1%;
+}
+
+.copyright {
+  text-align: left;
+  float: left;
+  clear: none;
+}
+
+address {
+  text-align: right;
+  font-size: 1.4rem;
+  float: right;
+  clear: none;
+}
+
 img-text-box {
   padding: 0;
+  position: sticky;
 }
 
 img-text-box img {
@@ -208,10 +214,10 @@ img-text-box img {
 img-text-box h3 {
   margin-top: 1%;
   margin-left: 0;
-  position: sticky;
+  position: absolute;
   width: 7%;
   text-align: center;
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 
 img.person {
