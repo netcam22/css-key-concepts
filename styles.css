@@ -504,9 +504,11 @@ label {
 
 label.search-box,
 input.search-box[type="search"] {
+  width: 70%;
   margin: 1%;
   padding: 5px;
   float: right;
+  clear: both;
   position: relative;
   background-color: var(--light-blue);
 }
