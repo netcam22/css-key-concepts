@@ -169,7 +169,7 @@ h2 {
 
 section.address-box {
   font-size: 3rem;
-  position: fixed;
+  position: absolute;
   bottom: 0;
   z-index: -1;
   font-size: 3rem;
@@ -179,11 +179,6 @@ section.address-box {
   font-family: "BenchNine-Bold";
   color: var(--strong-blue);
   text-align: left;
-}
-
-section.address-box>address {
-  position: sticky;
-  color: red;
 }
 
 footer {
@@ -303,17 +298,7 @@ img.grid-item {
   animation-delay: 7s;
   animation-name: move-in-from-right;
 }
-/*
-.move-background {
-  background-color: transparent;
-  animation-delay: 2s;
-  animation-name: change-background;
-  animation-duration: 5s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
-  opacity: 1;
-}
-*/
+
 .move-across {
   animation-delay: 2;
   animation-name: move-across-from-left;
@@ -371,19 +356,7 @@ img.grid-item {
     opacity: 1;
   }
 }
-/*
-@keyframes change-background {
-  0% {
-    opacity: 1;
-  }
-  30% {
-    opacity: 0.8;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-*/
+
 @keyframes move-across-from-left {
   0% {
     transform: translateX(1315%);
@@ -426,27 +399,24 @@ form {
   .top-img {
     width: 50%;
     opacity: 0.3;
-}
-
-@media only screen and (max-width: 768px) {
-
-  .grid-container {
-    grid-template-columns: auto auto;
   }
 
-  p.grid-item {
-    font-size: 1rem;
-  }
+  @media only screen and (max-width: 768px) {
+    .grid-container {
+      grid-template-columns: auto auto;
+    }
 
-  label.search-box,
-  input.search-box {
-    margin-top: 5%;
-  }
+    p.grid-item {
+      font-size: 1rem;
+    }
 
-  .flex-content {
-    flex-direction: column;
-  }
-}
+    label.search-box,
+    input.search-box {
+      margin-top: 5%;
+    }
 
-@media only screen and (max-width: 600px) {
+    .flex-content {
+      flex-direction: column;
+    }
+  }
 }
