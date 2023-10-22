@@ -178,31 +178,26 @@ h3 {
 footer {
   border-top: 10px solid var(--light-blue);
   background-color: #98c6eb;
-  margin: 0;
-  padding: 0;
   font-family: "BenchNine-Regular";
   position: fixed;
   bottom: 0;
   width: 100%;
-}
-
-address,
-.copyright {
   margin: 0;
   padding: 1%;
-}
-
-.copyright {
   text-align: left;
   float: left;
   clear: none;
+  font-size: 1.2rem;
 }
 
 address {
-  text-align: right;
+  margin: 2% 0;
+  padding: 1%;
+  font-family: "BenchNine-Regular";
   font-size: 1.4rem;
-  float: right;
-  clear: none;
+  text-align: left;
+  float: left;
+  color: var(--dark-grey-blue);
 }
 
 img-text-box {
@@ -268,7 +263,7 @@ p.grid-item {
 }
 
 img.grid-item {
-  width: 70%;
+  width: 80%;
 }
 
 .move {
@@ -379,7 +374,6 @@ section.flex-info-box {
 section.flex-video-box {
   background-color: var(--light-blue);
   z-index: -100;
-  width: 98%;
 }
 
 form {
@@ -540,6 +534,11 @@ fieldset > p {
 
   p.grid-item {
     font-size: 1rem;
+    margin-bottom: 5%;
+  }
+
+  img.grid-item {
+    width: 100%;
   }
 
   @media only screen and (max-width: 768px) {
