@@ -534,6 +534,10 @@ fieldset > p {
     line-height: 5rem;
   }
 
+  .flex-content {
+    flex-direction: column;
+  }
+
   p.grid-item {
     font-size: 1rem;
   }
@@ -550,10 +554,6 @@ fieldset > p {
     label.search-box,
     input.search-box {
       margin-top: 5%;
-    }
-
-    .flex-content {
-      flex-direction: column;
     }
   }
 }
