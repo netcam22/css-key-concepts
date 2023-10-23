@@ -15,11 +15,11 @@ http://www.fontsquirrel.com/fonts/benchnine;
 Accessed 15/12/13 */
 @font-face {
   font-family: "BenchNine-Bold";
-  src: url("../fonts/BenchNine-Bold.otf");
+  src: url("../benchnine/BenchNine-Bold.ttf");
 }
 @font-face {
   font-family: "BenchNine-Regular";
-  src: url("../fonts/BenchNine-Regular.otf");
+  src: url("../benchnine/BenchNine-Regular.ttf");
 }
 
 body {
