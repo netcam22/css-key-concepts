@@ -10,8 +10,6 @@
   --white: rgb(255, 255, 255);
 }
 
-@import url("https://fonts.googleapis.com/css2?family=BenchNine:wght@300;400;700&display=swap");
-
 /* Font: BenchNine[Font].
 "https://fonts.googleapis.com/css2?family=BenchNine:wght@300;400;700&display=swap";
 Accessed 23/10/23 */
@@ -433,6 +431,7 @@ input {
   -ms-user-select: none;
   user-select: none;
   z-index: 1;
+  line-height: 1.8rem;
 }
 
 .checkbox-container input[type="checkbox"] {
@@ -442,6 +441,7 @@ input {
   height: 0;
   width: 0;
 }
+
 .checkmark {
   position: absolute;
   top: 0;
