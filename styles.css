@@ -355,7 +355,7 @@ img.grid-item {
 
 @keyframes move-across-from-left {
   0% {
-    transform: translateX(800%);
+    transform: translateX(750%);
   }
   100% {
     transform: translateX(10%);
@@ -556,6 +556,9 @@ fieldset > p {
   }
 
   @media only screen and (max-width: 768px) {
+    column-container {
+      flex-direction: column;
+    }
     .grid-container {
       grid-template-columns: auto auto;
     }
