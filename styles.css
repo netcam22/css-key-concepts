@@ -355,7 +355,7 @@ img.grid-item {
 
 @keyframes move-across-from-left {
   0% {
-    transform: translateX(750%);
+    transform: translateX(830%);
   }
   100% {
     transform: translateX(10%);
@@ -556,6 +556,25 @@ fieldset > p {
   }
 
   @media only screen and (max-width: 768px) {
+    img-text-box h4 {
+      margin: 1%;
+      width: 20%;
+      font-size: 1.4rem;
+    }
+
+    img.person {
+      width: 20%;
+    }
+
+    @keyframes move-across-from-left {
+      0% {
+        transform: translateX(320%);
+      }
+      100% {
+        transform: translateX(10%);
+      }
+    }
+
     column-container {
       flex-direction: column;
     }
