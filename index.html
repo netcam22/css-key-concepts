@@ -62,7 +62,7 @@
             src="./images/line-drawn-doctor.png" />
         </grid-container>
 
-        <div class="flex-content">
+        <flex-content>
           <section class="flex-video-box single">
             <h3>How to use Ask My Doc?</h3>
 
@@ -108,68 +108,44 @@
                   <span class="checkmark"></span>
                 </label>
 
-                <div class="row">
-                  <div class="col-25">
-                    <label for="fname">First Name </label>
-                  </div>
-                  <div class="col-75">
-                    <input type="text" id="fname" name="fname" required />
-                  </div>
-                </div>
+                <input-row>
+                  <label for="fname">First Name </label>
+                  <input type="text" id="fname" name="fname" required />
+                </input-row>
 
-                <div class="row">
-                  <div class="col-25">
-                    <label for="lname">Last Name </label>
-                  </div>
-                  <div class="col-75">
-                    <input type="text" id="lname" name="lname" required />
-                  </div>
-                </div>
+                <input-row>
+                  <label for="lname">Last Name </label>
+                  <input type="text" id="lname" name="lname" required />
+                </input-row>
 
-                <div class="row">
-                  <div class="col-25">
-                    <label for="dob">Date of Birth </label>
-                  </div>
-                  <div class="col-75">
-                    <input type="date" id="dob" name="dob" required />
-                  </div>
-                </div>
+                <input-row>
+                  <label for="dob">Date of Birth </label>
+                  <input type="date" id="dob" name="dob" required />
+                </input-row>
 
-                <div class="row">
-                  <div class="col-25">
+                <input-row">
                     <label for="telephone">Telephone Number: </label>
-                  </div>
-                  <div class="col-75">
                     <input
                       type="tel"
                       id="telephone"
                       name="telephone"
                       required />
-                  </div>
-                </div>
+                </input-row>
 
-                <div class="row">
-                  <div class="col-25">
+                <input-row>
                     <label for="email">Email: </label>
-                  </div>
-                  <div class="col-75">
                     <input type="email" id="email" name="email" required />
-                  </div>
-                </div>
+                  </input-row>
 
-                <div class="row">
-                  <div class="col-25">
+                <input-row>
                     <label for="message">Your query or message: </label>
-                  </div>
-                  <div class="col-75">
                     <input type="text" id="message" name="message" required />
-                  </div>
-                </div>
+                </input-row>
                 <input type="submit" value="Submit" />
               </fieldset>
             </form>
           </section>
-        </div>
+        </flex-content>
       </column-box>
 
       <column-box class="small">
@@ -178,19 +154,15 @@
             <a class="small" href="#">Tech Returners Surgery</a>
             <a class="header-sub small" href="tel:03330509138">0333 050 9138</a>
           </span>
-          <div class="row">
-            <div class="col-25">
-              <label class="search-box" for="site-search">Search...</label>
-            </div>
-            <div class="col-75">
-              <input
-                class="search-box"
-                type="search"
-                id="site-search"
-                name="search"
-                aria-label="Search through site content" />
-            </div>
-          </div>
+          <input-row>
+            <label class="search-box" for="site-search">Search...</label>
+            <input
+              class="search-box"
+              type="search"
+              id="site-search"
+              name="search"
+              aria-label="Search through site content" />
+          </input-row>
         </header>
       </column-box>
     </column-container>
