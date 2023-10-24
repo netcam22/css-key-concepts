@@ -531,7 +531,7 @@ label {
 
 label.search-box {
   margin: 0;
-  padding: 2%;
+  padding: 0 2%;
   text-align: left;
   float: left;
   clear: both;
@@ -608,7 +608,7 @@ fieldset > p {
 
     label.search-box,
     input.search-box {
-      margin-top: 5%;
+      margin-top: 2%;
     }
   }
 }
