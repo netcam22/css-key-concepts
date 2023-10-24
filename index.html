@@ -30,10 +30,10 @@
 
     <column-container>
       <column-box class="small">
-        <div class="grid-container">
+        <grid-container class="grid-six-col">
           <p class="move move-first grid-item">
-            Throughout the pandemic we have striven to make the surgery as safe
-            as possible for all our patients and staff, we will continue to do
+            Throughout the pandemic, we have striven to make the surgery as safe
+            as possible for all our patients and staff; we will continue to do
             so.
           </p>
           <img
@@ -43,7 +43,7 @@
 
           <p class="move move-second grid-item">
             From the
-            <em>19th July 2021 nothing will change at the Surgery</em> Patients
+            <em>19th July 2021 nothing will change at the Surgery.</em> Patients
             will <em>still need</em> to wear a mask, socially distance and use
             hand sanitiser in the surgery and staff will continue to wear PPE.
           </p>
@@ -60,9 +60,9 @@
             class="move move-third grid-item"
             alt="masked male doctor looking to left"
             src="./images/line-drawn-doctor.png" />
-        </div>
+        </grid-container>
 
-        <div class="flex-content">
+        <flex-content>
           <section class="flex-video-box single">
             <h3>How to use Ask My Doc?</h3>
 
@@ -80,7 +80,7 @@
               The Tech Returners Surgery,<br />
               115 Mancunian Way,<br />
               Manchester,<br />
-              M20 3PX
+              M20 3PX.
             </address>
           </section>
 
@@ -91,7 +91,7 @@
               <fieldset>
                 <legend>
                   Send us a message by filling out the form below and one of our
-                  Receptionists will be in touch:
+                  receptionists will be in touch:
                 </legend>
 
                 <p>Are you completing this form on behalf of:</p>
@@ -108,68 +108,44 @@
                   <span class="checkmark"></span>
                 </label>
 
-                <div class="row">
-                  <div class="col-25">
-                    <label for="fname">First Name </label>
-                  </div>
-                  <div class="col-75">
-                    <input type="text" id="fname" name="fname" required />
-                  </div>
-                </div>
+                <input-row>
+                  <label for="fname">First Name </label>
+                  <input type="text" id="fname" name="fname" required />
+                </input-row>
 
-                <div class="row">
-                  <div class="col-25">
-                    <label for="lname">Last Name </label>
-                  </div>
-                  <div class="col-75">
-                    <input type="text" id="lname" name="lname" required />
-                  </div>
-                </div>
+                <input-row>
+                  <label for="lname">Last Name </label>
+                  <input type="text" id="lname" name="lname" required />
+                </input-row>
 
-                <div class="row">
-                  <div class="col-25">
-                    <label for="dob">Date of Birth </label>
-                  </div>
-                  <div class="col-75">
-                    <input type="date" id="dob" name="dob" required />
-                  </div>
-                </div>
+                <input-row>
+                  <label for="dob">Date of Birth </label>
+                  <input type="date" id="dob" name="dob" required />
+                </input-row>
 
-                <div class="row">
-                  <div class="col-25">
+                <input-row">
                     <label for="telephone">Telephone Number: </label>
-                  </div>
-                  <div class="col-75">
                     <input
                       type="tel"
                       id="telephone"
                       name="telephone"
                       required />
-                  </div>
-                </div>
+                </input-row>
 
-                <div class="row">
-                  <div class="col-25">
+                <input-row>
                     <label for="email">Email: </label>
-                  </div>
-                  <div class="col-75">
                     <input type="email" id="email" name="email" required />
-                  </div>
-                </div>
+                  </input-row>
 
-                <div class="row">
-                  <div class="col-25">
+                <input-row>
                     <label for="message">Your query or message: </label>
-                  </div>
-                  <div class="col-75">
                     <input type="text" id="message" name="message" required />
-                  </div>
-                </div>
+                </input-row>
                 <input type="submit" value="Submit" />
               </fieldset>
             </form>
           </section>
-        </div>
+        </flex-content>
       </column-box>
 
       <column-box class="small">
@@ -178,23 +154,19 @@
             <a class="small" href="#">Tech Returners Surgery</a>
             <a class="header-sub small" href="tel:03330509138">0333 050 9138</a>
           </span>
-          <div class="row">
-            <div class="col-25">
-              <label class="search-box" for="site-search">Search...</label>
-            </div>
-            <div class="col-75">
-              <input
-                class="search-box"
-                type="search"
-                id="site-search"
-                name="search"
-                aria-label="Search through site content" />
-            </div>
-          </div>
+          <input-row>
+            <label class="search-box" for="site-search">Search...</label>
+            <input
+              class="search-box"
+              type="search"
+              id="site-search"
+              name="search"
+              aria-label="Search through site content" />
+          </input-row>
         </header>
       </column-box>
     </column-container>
-    <footer>&#169; Annette Le Sage - Tech Retuners Surgery 2023</footer>
+    <footer>&#169; Annette Le Sage - Tech Returners Surgery 2023</footer>
     <img-text-box class="move-across">
       <h4 class="move-across">
         <strong>Welcome to the Tech Returners Surgery!</strong>

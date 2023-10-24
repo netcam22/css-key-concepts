@@ -31,8 +31,8 @@ body {
   font-family: "Times New Roman", Times, serif;
 }
 
-/* flex styling*/
-.flex-content {
+/* custom elements for columns and rows*/
+flex-content {
   display: flex;
   justify-content: space-around;
   flex-flow: wrap;
@@ -69,6 +69,70 @@ sticky-container {
   box-sizing: border-box;
   z-index: 1000;
 }
+
+/* columns*/
+column-container {
+  box-sizing: border-box;
+  display: inline-flex;
+  flex-direction: row;
+  grid-template-columns: auto auto;
+  padding: 1%;
+  margin: 1%;
+  align-items: stretch;
+  flex-shrink: initial;
+}
+
+column-box {
+  background-color: transparent;
+  text-align: left;
+}
+grid-container {
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  padding: 1%;
+  margin: 0 1% 0 1%;
+  z-index: -1;
+  position: relative;
+}
+
+grid-container.grid-two-col {
+  grid-template-columns: auto auto auto;
+}
+
+grid-container.grid-three-col {
+  grid-template-columns: auto auto auto;
+}
+
+grid-container.grid-five-col {
+  grid-template-columns: auto auto auto auto auto;
+}
+
+grid-container.grid-six-col {
+  grid-template-columns: auto auto auto auto auto auto;
+}
+/*grid*/
+.grid-item {
+  margin-top: 0;
+  padding: 10%;
+  padding-bottom: 0;
+  background-color: var(--white);
+  background-repeat: no-repeat;
+  background-size: contain;
+  text-align: left;
+}
+
+p.grid-item {
+  position: relative;
+  word-wrap: normal;
+  font-size: 1.2rem;
+  margin-left: 10%;
+}
+
+img.grid-item {
+  width: 80%;
+}
+
 /*header, footer, address and top image*/
 header {
   background-color: transparent;
@@ -199,22 +263,6 @@ h3 {
   margin-top: 0;
   margin-left: calc(2% + 5px);
 }
-/* columns*/
-column-container {
-  box-sizing: border-box;
-  display: inline-flex;
-  flex-direction: row;
-  grid-template-columns: auto auto;
-  padding: 1%;
-  margin: 1%;
-  align-items: stretch;
-  flex-shrink: initial;
-}
-
-column-box {
-  background-color: transparent;
-  text-align: left;
-}
 
 /* moving image and text*/
 img-text-box {
@@ -237,36 +285,6 @@ img.person {
   position: sticky;
 }
 
-.grid-container {
-  box-sizing: border-box;
-  display: grid;
-  grid-template-columns: auto auto auto auto auto auto;
-  padding: 1%;
-  margin: 0 1% 0 1%;
-  z-index: -1;
-  position: relative;
-}
-/*grid*/
-.grid-item {
-  margin-top: 0;
-  padding: 10%;
-  padding-bottom: 0;
-  background-color: var(--white);
-  background-repeat: no-repeat;
-  background-size: contain;
-  text-align: left;
-}
-
-p.grid-item {
-  position: relative;
-  word-wrap: normal;
-  font-size: 1.2rem;
-  margin-left: 10%;
-}
-
-img.grid-item {
-  width: 80%;
-}
 /*animation*/
 .move {
   background: transparent;
@@ -361,7 +379,7 @@ img.grid-item {
     transform: translateX(10%);
   }
 }
-/*sections*/
+/*sections and section features*/
 section {
   box-sizing: border-box;
   margin: 1%;
@@ -399,21 +417,23 @@ input {
   color: var(--dark-grey-blue);
 }
 
-.col-25 {
+input-row {
+  box-sizing: border-box;
   float: left;
   clear: both;
   width: 100%;
   margin-top: 6px;
 }
 
-.col-75 {
-  float: left;
-  clear: both;
-  width: 100%;
-  margin-top: 6px;
+input-row.three-quarters {
+  width: 75%;
 }
 
-.row:after {
+input-row.half {
+  width: 50%;
+}
+
+input-row:after {
   content: "";
   display: table;
   clear: both;
@@ -539,7 +559,7 @@ fieldset > p {
     line-height: 5rem;
   }
 
-  .flex-content {
+  flex-content {
     flex-direction: column;
   }
   p.grid-item {
@@ -578,7 +598,7 @@ fieldset > p {
     column-container {
       flex-direction: column;
     }
-    .grid-container {
+    grid-container.grid-six-col {
       grid-template-columns: auto auto;
     }
 
