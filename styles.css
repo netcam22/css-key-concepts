@@ -237,14 +237,18 @@ img.person {
   position: sticky;
 }
 
-.grid-container {
+grid-container {
   box-sizing: border-box;
   display: grid;
-  grid-template-columns: auto auto auto auto auto auto;
+  grid-template-columns: auto auto auto auto;
   padding: 1%;
   margin: 0 1% 0 1%;
   z-index: -1;
   position: relative;
+}
+
+grid-container.grid-six-col {
+  grid-template-columns: auto auto auto auto auto auto;
 }
 /*grid*/
 .grid-item {
@@ -578,7 +582,7 @@ fieldset > p {
     column-container {
       flex-direction: column;
     }
-    .grid-container {
+    grid-container.grid-six-col {
       grid-template-columns: auto auto;
     }
 
