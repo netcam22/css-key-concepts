@@ -34,7 +34,7 @@ body {
 }
 
 /* custom elements for columns and rows*/
-flex-content {
+.flex-content {
   display: flex;
   justify-content: space-around;
   flex-flow: wrap;
@@ -64,7 +64,7 @@ flex-content {
   flex-grow: 4;
 }
 
-sticky-container {
+.sticky-container {
   position: sticky;
   top: 0;
   left: 0;
@@ -73,11 +73,11 @@ sticky-container {
 }
 
 /* columns*/
-main.column-container {
+.column-container {
   box-sizing: border-box;
   display: inline-flex;
   flex-direction: row;
-  grid-template-columns: auto auto;
+  grid-template-columns: auto auto auto;
   padding: 1%;
   margin: 1%;
   align-items: stretch;
@@ -89,6 +89,8 @@ column-box {
   text-align: left;
 }
 grid-container {
+  background-color: transparent;
+  text-align: left;
   box-sizing: border-box;
   display: grid;
   grid-template-columns: auto auto auto auto;
@@ -99,7 +101,7 @@ grid-container {
 }
 
 grid-container.grid-two-col {
-  grid-template-columns: auto auto auto;
+  grid-template-columns: auto auto;
 }
 
 grid-container.grid-three-col {
@@ -135,36 +137,35 @@ img.grid-item {
   width: 90%;
 }
 
-/*header, footer, address and top image*/
-header {
+/*aside, footer, address and top image*/
+aside h2,
+aside h3 {
   background-color: transparent;
   opacity: 1;
-  padding: 1% 0;
-  margin: 0;
-  border-bottom: 0;
-  text-align: left;
-}
-
-header a {
+  border: 0;
+  text-align: right;
   font-size: 7rem;
   line-height: 7rem;
+  font-family: "BenchNine-Bold";
   padding: 1%;
   margin: 1%;
-  text-decoration: none;
-  font-family: "BenchNine-Bold";
-  color: var(--mid-grey-blue);
-  text-align: right;
 }
 
-a.header-sub.small {
+aside h2 > a.side-text {
+  text-decoration: none;
+  color: var(--mid-grey-blue);
+}
+
+aside h3 > a.side-text-sub {
   display: inline;
   color: var(--mid-blue);
+  text-decoration: none;
 }
 
-header a:hover {
+aside h2 a.side-text:hover {
   color: var(--strong-orange);
 }
-a.header-sub.small:hover {
+aside h3 > a.side-text-sub.small:hover {
   color: var(--mid-orange);
 }
 
@@ -565,12 +566,15 @@ fieldset > p {
     padding-left: 10%;
   }
 
-  header a {
+  aside h2,
+  aside h3 {
     font-size: 5rem;
     line-height: 5rem;
+    float: right;
+    clear: both;
   }
 
-  flex-content {
+  .flex-content {
     flex-direction: column;
   }
 
@@ -614,7 +618,7 @@ fieldset > p {
       }
     }
 
-    main.column-container {
+    .column-container {
       flex-direction: column;
     }
 
