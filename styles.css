@@ -3,11 +3,13 @@
   --med-orange: rgb(255, 200, 140);
   --mid-orange: rgb(250, 213, 156);
   --strong-blue: rgb(2, 125, 208);
+  --med-blue: rgb(152, 198, 235);
   --mid-blue: rgb(203, 226, 245);
   --light-blue: rgb(224, 237, 249);
   --mid-grey-blue: rgb(136, 178, 211);
   --dark-grey-blue: rgb(76, 99, 117);
   --white: rgb(255, 255, 255);
+  --black: rgb(0, 0, 0);
 }
 
 /* Font: BenchNine[Font].
@@ -31,15 +33,19 @@ body {
   font-family: "Times New Roman", Times, serif;
 }
 
+main {
+  margin: 0;
+}
+
 /* custom elements for columns and rows*/
-flex-content {
+.flex-content {
   display: flex;
   justify-content: space-around;
   flex-flow: wrap;
   align-items: stretch;
   flex-direction: row;
   flex-wrap: nowrap;
-  margin-top: 4%;
+  margin-top: 0;
 }
 
 .flex-column {
@@ -62,7 +68,7 @@ flex-content {
   flex-grow: 4;
 }
 
-sticky-container {
+.sticky-container {
   position: sticky;
   top: 0;
   left: 0;
@@ -71,46 +77,49 @@ sticky-container {
 }
 
 /* columns*/
-column-container {
+.column-container {
   box-sizing: border-box;
   display: inline-flex;
   flex-direction: row;
-  grid-template-columns: auto auto;
+  grid-template-columns: auto auto auto;
   padding: 1%;
-  margin: 1%;
+  margin: 0;
   align-items: stretch;
   flex-shrink: initial;
 }
 
-column-box {
+.column-container > section {
   background-color: transparent;
   text-align: left;
 }
-grid-container {
+.grid-container {
+  background-color: transparent;
+  text-align: left;
   box-sizing: border-box;
   display: grid;
   grid-template-columns: auto auto auto auto;
   padding: 1%;
-  margin: 0 1% 0 1%;
+  margin: 0;
   z-index: -1;
   position: relative;
 }
 
-grid-container.grid-two-col {
+.grid-two-col {
+  grid-template-columns: auto auto;
+}
+
+.grid-three-col {
   grid-template-columns: auto auto auto;
 }
 
-grid-container.grid-three-col {
-  grid-template-columns: auto auto auto;
-}
-
-grid-container.grid-five-col {
+.grid-five-col {
   grid-template-columns: auto auto auto auto auto;
 }
 
-grid-container.grid-six-col {
+.grid-six-col {
   grid-template-columns: auto auto auto auto auto auto;
 }
+
 /*grid*/
 .grid-item {
   margin-top: 0;
@@ -122,53 +131,60 @@ grid-container.grid-six-col {
   text-align: left;
 }
 
+h2.grid-item {
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  word-spacing: 100vw;
+}
+
 p.grid-item {
   position: relative;
   word-wrap: normal;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   margin-left: 10%;
 }
 
 img.grid-item {
-  width: 80%;
+  width: 90%;
 }
 
-/*header, footer, address and top image*/
-header {
+/*aside, footer, address and top image*/
+aside h2,
+aside h3 {
   background-color: transparent;
   opacity: 1;
-  padding: 1% 0;
-  margin: 0;
-  border-bottom: 0;
-  text-align: left;
-}
-
-header a {
+  border: 0;
+  text-align: right;
   font-size: 7rem;
   line-height: 7rem;
+  font-family: "BenchNine-Bold";
   padding: 1%;
   margin: 1%;
-  text-decoration: none;
-  font-family: "BenchNine-Bold";
-  color: var(--mid-grey-blue);
-  text-align: right;
 }
 
-a.header-sub.small {
+aside h2 > a.side-text {
+  text-decoration: none;
+  color: var(--mid-grey-blue);
+}
+
+aside h3 > a.side-text-sub {
   display: inline;
   color: var(--mid-blue);
+  text-decoration: none;
 }
 
-header a:hover {
+aside h2 a.side-text:hover {
   color: var(--strong-orange);
 }
-a.header-sub.small:hover {
+aside h3 > a.side-text-sub.small:hover {
   color: var(--mid-orange);
 }
 
 footer {
   border-top: 10px solid var(--light-blue);
-  background-color: #98c6eb;
+  background-color: var(--med-blue);
   font-family: "BenchNine-Regular";
   position: fixed;
   bottom: 0;
@@ -186,7 +202,7 @@ address {
   margin: 2% 0;
   padding: 1%;
   font-family: "BenchNine-Regular";
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   text-align: left;
   float: left;
   color: var(--dark-grey-blue);
@@ -404,17 +420,21 @@ form {
   box-sizing: border-box;
   margin: 1%;
   padding: 4%;
+  font-size: 1.4rem;
 }
 
 input {
   width: 100%;
-  padding: 2px;
+  padding: 1%;
   margin: 1% auto;
   box-sizing: border-box;
   border: 2px solid var(--mid-grey-blue);
   border-radius: 4px;
   background-color: var(--white);
   color: var(--dark-grey-blue);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.1rem;
+  color: var(--black);
 }
 
 input-row {
@@ -422,7 +442,7 @@ input-row {
   float: left;
   clear: both;
   width: 100%;
-  margin-top: 6px;
+  margin-top: 1%;
 }
 
 input-row.three-quarters {
@@ -442,10 +462,10 @@ input-row:after {
 .checkbox-container {
   display: block;
   position: relative;
-  padding-left: 35px;
-  margin-bottom: 12px;
+  padding-left: 20%;
+  margin-bottom: 2%;
   cursor: pointer;
-  font-size: 22px;
+  font-size: 1.4rem;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -468,16 +488,16 @@ input-row:after {
   left: 0;
   height: 25px;
   width: 25px;
-  background-color: #eee;
+  background-color: var(--white);
   border: 1px solid var(--mid-grey-blue);
 }
 
 .checkbox-container:hover input ~ .checkmark {
-  background-color: #ccc;
+  background-color: var(--med-blue);
 }
 
 .checkbox-container input:checked ~ .checkmark {
-  background-color: #2196f3;
+  background-color: var(--strong-blue);
 }
 
 .checkmark:after {
@@ -507,34 +527,36 @@ input[type="email"]:focus,
 input[type="tel"]:focus,
 input[type="search"]:focus,
 input[type="date"]:focus {
-  background-color: var(--mid-orange);
+  background-color: var(--white);
+  border: 4px solid var(--med-orange);
 }
 
 input[type="submit"] {
   background-color: var(--dark-grey-blue);
   border: none;
-  color: white;
-  padding: 1%;
+  color: var(--white);
+  padding: 2%;
   text-decoration: none;
-  margin: 1%;
+  margin: 3% 0;
+  font-size: 1rem;
   cursor: pointer;
-  width: 100px;
+  width: 40%;
 }
 
 label {
   font-family: "BenchNine-Regular";
-  font-size: 1.2rem;
-  line-height: 1.2rem;
+  margin-top: 2%;
   color: var(--dark-grey-blue);
   text-wrap: nowrap;
 }
 
-label.search-box {
+search label {
   margin: 0;
   padding: 0 2%;
   text-align: left;
   float: left;
   clear: both;
+  font-size: 1.4rem;
 }
 
 fieldset {
@@ -549,21 +571,31 @@ fieldset > p {
   color: var(--dark-grey-blue);
   padding: 1%;
   font-family: "BenchNine-Bold";
-  font-size: 1.2rem;
 }
 
 /* media query additional styles */
 @media only screen and (max-width: 992px) {
-  header a {
-    font-size: 5rem;
-    line-height: 5rem;
+  .checkbox-container {
+    padding-left: 10%;
   }
 
-  flex-content {
+  aside h2,
+  aside h3 {
+    font-size: 5rem;
+    line-height: 5rem;
+    float: right;
+    clear: both;
+  }
+
+  .flex-content {
     flex-direction: column;
   }
+
+  .grid-six-col {
+    grid-template-columns: auto auto;
+  }
+
   p.grid-item {
-    font-size: 1rem;
     margin-bottom: 5%;
   }
 
@@ -576,6 +608,10 @@ fieldset > p {
   }
 
   @media only screen and (max-width: 768px) {
+    .checkbox-container {
+      padding-left: 10%;
+    }
+
     img-text-box h4 {
       margin: 1%;
       width: 20%;
@@ -595,19 +631,16 @@ fieldset > p {
       }
     }
 
-    column-container {
+    .column-container {
       flex-direction: column;
-    }
-    grid-container.grid-six-col {
-      grid-template-columns: auto auto;
     }
 
     p.grid-item {
-      font-size: 1rem;
+      font-size: 1.3rem;
     }
 
-    label.search-box,
-    input.search-box {
+    search label.search-box,
+    search input.search-box {
       margin-top: 2%;
     }
   }
