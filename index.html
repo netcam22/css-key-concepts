@@ -27,9 +27,13 @@
 
     <h1>Covid-19 Information</h1>
     <h2>Covid Restriction Update</h2>
+  
+    <main class = 'column-container'>
 
-    <main class = 'column-container small'>
-      <grid-container class="grid-six-col">
+      <div class = column-box>
+
+        <section class = "grid-container grid-six-col small">
+        
           <p class="move move-first grid-item">
             Throughout the pandemic, we have striven to make the surgery as safe
             as possible for all our patients and staff; we will continue to do
@@ -48,7 +52,6 @@
           </p>
           <img
             class="move move-second grid-item"
-            alt="masked female doctor looking to right"
             src="./images/line-drawn-woman.png" />
 
           <p class="move move-third grid-item">
@@ -59,109 +62,110 @@
             class="move move-third grid-item"
             alt="masked male doctor looking to left"
             src="./images/line-drawn-doctor.png" />
-      </grid-container>
-    </main>
+        </section>
 
-    <main class = "flex-content">
+        <div class = "flex-content">
 
-      <section class="flex-video-box single">
-        <h3>How to use Ask My Doc?</h3>
+          <section class="flex-video-box single">
+            <h3>How to use Ask My Doc?</h3>
 
-        <video controls poster="./images/video_poster.jpg">
-          <source src="#" type="video/webm" />
-          <source src="#" type="video/mp4" />
-          <track
-            kind="captions"
-            srclang="en"
-            src="./ask_my_doc_transcript.vtt"
-            default />
-            Sorry, your browser doesn't support embedded videos.
-        </video>
-        <address>
-          The Tech Returners Surgery,<br />
-          115 Mancunian Way,<br />
-          Manchester,<br />
-          M20 3PX.
-        </address>
-      </section>
+            <video controls poster="./images/video_poster.jpg">
+              <source src="#" type="video/webm" />
+              <source src="#" type="video/mp4" />
+              <track
+                kind="captions"
+                srclang="en"
+                src="./ask_my_doc_transcript.vtt"
+                default />
+                Sorry, your browser doesn't support embedded videos.
+            </video>
+            <address>
+              The Tech Returners Surgery,<br />
+              115 Mancunian Way,<br />
+              Manchester,<br />
+              M20 3PX.
+            </address>
+          </section>
 
-      <section class="flex-info-box single">
-        <h3>Need advice or have some feedback for us?</h3>
+          <section class="flex-info-box single">
+            <h3>Need advice or have some feedback for us?</h3>
 
-        <form>
-          <fieldset>
-            <legend>
-              Send us a message by filling out the form below and one of our
-              receptionists will be in touch:
-            </legend>
+            <form>
+              <fieldset>
+                <legend>
+                  Send us a message by filling out the form below and one of our
+                  receptionists will be in touch:
+                </legend>
 
-              <p>Are you completing this form on behalf of:</p>
+                  <p>Are you completing this form on behalf of:</p>
 
-            <label class="checkbox-container"
-              >Yourself
-              <input type="checkbox" id="self" name="self" />
-              <span class="checkmark"></span>
-            </label>
+                <label class="checkbox-container"
+                  >Yourself
+                  <input type="checkbox" id="self" name="self" />
+                  <span class="checkmark"></span>
+                </label>
 
-            <label class="checkbox-container"
-              >Someone else
-              <input type="checkbox" id="another" name="another" />
-              <span class="checkmark"></span>
-            </label>
+                <label class="checkbox-container"
+                  >Someone else
+                  <input type="checkbox" id="another" name="another" />
+                  <span class="checkmark"></span>
+                </label>
 
-            <input-row>
-              <label for="fname">First Name </label>
-              <input type="text" id="fname" name="fname" required />
-            </input-row>
+                <input-row>
+                  <label for="fname">First Name </label>
+                  <input type="text" id="fname" name="fname" required />
+                </input-row>
 
-            <input-row>
-              <label for="lname">Last Name </label>
-              <input type="text" id="lname" name="lname" required />
-            </input-row>
+                <input-row>
+                  <label for="lname">Last Name </label>
+                  <input type="text" id="lname" name="lname" required />
+                </input-row>
 
-            <input-row>
-              <label for="dob">Date of Birth </label>
-              <input type="date" id="dob" name="dob" required />
-            </input-row>
+                <input-row>
+                  <label for="dob">Date of Birth </label>
+                  <input type="date" id="dob" name="dob" required />
+                </input-row>
 
-            <input-row">
-              <label for="telephone">Telephone Number: </label>
-              <input
-                type="tel"
-                id="telephone"
-                name="telephone"
-                required />
-            </input-row>
+                <input-row">
+                  <label for="telephone">Telephone Number: </label>
+                  <input
+                    type="tel"
+                    id="telephone"
+                    name="telephone"
+                    required />
+                </input-row>
 
-            <input-row>
-              <label for="email">Email: </label>
-              <input type="email" id="email" name="email" required />
-            </input-row>
+                <input-row>
+                  <label for="email">Email: </label>
+                  <input type="email" id="email" name="email" required />
+                </input-row>
 
-            <input-row>
-              <label for="message">Your query or message: </label>
-              <input type="text" id="message" name="message" required />
-            </input-row>
-            <input type="submit" value="Submit" />
-          </fieldset>
-        </form>
-      </section>
+                <input-row>
+                  <label for="message">Your query or message: </label>
+                  <input type="text" id="message" name="message" required />
+                </input-row>
+                <input type="submit" value="Submit" />
+              </fieldset>
+            </form>
+          </section>
+        </div>
+      </div>
+ 
+      <aside class ="flex-column small">
+        <h2><a class="side-text small" href="#">Tech Returners Surgery</a></h2>
+        <h3><a class="side-text-sub small" href="tel:03330509138">0333 050 9138</a></h3>
+        <search>
+        <label for="site-search">Search...</label>
+          <input
+            type="search"
+            id="site-search"
+            name="search"
+            aria-label="Search through site content" />
+        </search>
+      </aside>
       
-      <section class="small">
-          <aside class ="flex-column">
-            <h2><a class="side-text small" href="#">Tech Returners Surgery</a></h2>
-            <h3><a class="side-text-sub small" href="tel:03330509138">0333 050 9138</a></h3>
-          <search>
-            <label for="site-search">Search...</label>
-            <input
-              type="search"
-              id="site-search"
-              name="search"
-              aria-label="Search through site content" />
-          </search>
-        </aside>
-      </section>
     </main>
+  
     <footer>&#169; Annette Le Sage - Tech Returners Surgery 2023</footer>
     <img-text-box class="move-across">
       <h4 class="move-across">

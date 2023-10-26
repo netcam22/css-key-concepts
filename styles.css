@@ -33,6 +33,10 @@ body {
   font-family: "Times New Roman", Times, serif;
 }
 
+main {
+  margin: 0;
+}
+
 /* custom elements for columns and rows*/
 .flex-content {
   display: flex;
@@ -41,7 +45,7 @@ body {
   align-items: stretch;
   flex-direction: row;
   flex-wrap: nowrap;
-  margin-top: 4%;
+  margin-top: 0;
 }
 
 .flex-column {
@@ -79,42 +83,43 @@ body {
   flex-direction: row;
   grid-template-columns: auto auto auto;
   padding: 1%;
-  margin: 1%;
+  margin: 0;
   align-items: stretch;
   flex-shrink: initial;
 }
 
-column-box {
+.column-container > section {
   background-color: transparent;
   text-align: left;
 }
-grid-container {
+.grid-container {
   background-color: transparent;
   text-align: left;
   box-sizing: border-box;
   display: grid;
   grid-template-columns: auto auto auto auto;
   padding: 1%;
-  margin: 0 1% 0 1%;
+  margin: 0;
   z-index: -1;
   position: relative;
 }
 
-grid-container.grid-two-col {
+.grid-two-col {
   grid-template-columns: auto auto;
 }
 
-grid-container.grid-three-col {
+.grid-three-col {
   grid-template-columns: auto auto auto;
 }
 
-grid-container.grid-five-col {
+.grid-five-col {
   grid-template-columns: auto auto auto auto auto;
 }
 
-grid-container.grid-six-col {
+.grid-six-col {
   grid-template-columns: auto auto auto auto auto auto;
 }
+
 /*grid*/
 .grid-item {
   margin-top: 0;
@@ -124,6 +129,14 @@ grid-container.grid-six-col {
   background-repeat: no-repeat;
   background-size: contain;
   text-align: left;
+}
+
+h2.grid-item {
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  word-spacing: 100vw;
 }
 
 p.grid-item {
@@ -578,7 +591,7 @@ fieldset > p {
     flex-direction: column;
   }
 
-  grid-container.grid-six-col {
+  .grid-six-col {
     grid-template-columns: auto auto;
   }
 
