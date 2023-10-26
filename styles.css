@@ -83,7 +83,7 @@ main {
   flex-direction: row;
   grid-template-columns: auto auto auto;
   padding: 1%;
-  margin: 0;
+  margin: 1%;
   align-items: stretch;
   flex-shrink: initial;
 }
@@ -131,14 +131,6 @@ main {
   text-align: left;
 }
 
-h2.grid-item {
-  background-color: transparent;
-  margin: 0;
-  padding: 0;
-  text-align: left;
-  word-spacing: 100vw;
-}
-
 p.grid-item {
   position: relative;
   word-wrap: normal;
@@ -151,6 +143,11 @@ img.grid-item {
 }
 
 /*aside, footer, address and top image*/
+
+aside {
+  margin: 1%;
+}
+
 aside h2,
 aside h3 {
   background-color: transparent;
@@ -550,7 +547,7 @@ label {
   text-wrap: nowrap;
 }
 
-.search-box label {
+search-box label {
   margin: 0;
   padding: 0 2%;
   text-align: left;
@@ -639,8 +636,8 @@ fieldset > p {
       font-size: 1.3rem;
     }
 
-    .search-box label,
-    .search-box input {
+    search-box label,
+    search-box input {
       margin-top: 2%;
     }
   }
