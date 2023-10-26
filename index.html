@@ -8,7 +8,7 @@
     <title>Tech Returners Surgery: Home</title>
   </head>
   <body>
-    <header class ="sticky-container">
+    <header class="sticky-container">
       <nav>
         <ul>
           <li><a href="#">Home</a></li>
@@ -27,13 +27,10 @@
 
     <h1>Covid-19 Information</h1>
     <h2>Covid Restriction Update</h2>
-  
-    <main class = 'column-container'>
 
-      <div class = column-box>
-
-        <section class = "grid-container grid-six-col small">
-        
+    <main class="column-container">
+      <div class="column-box">
+        <section class="grid-container grid-six-col small">
           <p class="move move-first grid-item">
             Throughout the pandemic, we have striven to make the surgery as safe
             as possible for all our patients and staff; we will continue to do
@@ -52,6 +49,7 @@
           </p>
           <img
             class="move move-second grid-item"
+            alt="person taking mask off"
             src="./images/line-drawn-woman.png" />
 
           <p class="move move-third grid-item">
@@ -64,8 +62,7 @@
             src="./images/line-drawn-doctor.png" />
         </section>
 
-        <div class = "flex-content">
-
+        <div class="flex-content">
           <section class="flex-video-box single">
             <h3>How to use Ask My Doc?</h3>
 
@@ -77,7 +74,7 @@
                 srclang="en"
                 src="./ask_my_doc_transcript.vtt"
                 default />
-                Sorry, your browser doesn't support embedded videos.
+              Sorry, your browser doesn't support embedded videos.
             </video>
             <address>
               The Tech Returners Surgery,<br />
@@ -97,7 +94,7 @@
                   receptionists will be in touch:
                 </legend>
 
-                  <p>Are you completing this form on behalf of:</p>
+                <p>Are you completing this form on behalf of:</p>
 
                 <label class="checkbox-container"
                   >Yourself
@@ -126,13 +123,9 @@
                   <input type="date" id="dob" name="dob" required />
                 </input-row>
 
-                <input-row">
+                <input-row>
                   <label for="telephone">Telephone Number: </label>
-                  <input
-                    type="tel"
-                    id="telephone"
-                    name="telephone"
-                    required />
+                  <input type="tel" id="telephone" name="telephone" required />
                 </input-row>
 
                 <input-row>
@@ -150,22 +143,25 @@
           </section>
         </div>
       </div>
- 
-      <aside class ="flex-column small">
+
+      <aside class="flex-column small">
         <h2><a class="side-text small" href="#">Tech Returners Surgery</a></h2>
-        <h3><a class="side-text-sub small" href="tel:03330509138">0333 050 9138</a></h3>
-        <search>
-        <label for="site-search">Search...</label>
+        <h3>
+          <a class="side-text-sub small" href="tel:03330509138"
+            >0333 050 9138</a
+          >
+        </h3>
+        <search-box>
+          <label for="site-search">Search...</label>
           <input
             type="search"
             id="site-search"
             name="search"
             aria-label="Search through site content" />
-        </search>
+        </search-box>
       </aside>
-      
     </main>
-  
+
     <footer>&#169; Annette Le Sage - Tech Returners Surgery 2023</footer>
     <img-text-box class="move-across">
       <h4 class="move-across">

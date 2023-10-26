@@ -550,7 +550,7 @@ label {
   text-wrap: nowrap;
 }
 
-search label {
+.search-box label {
   margin: 0;
   padding: 0 2%;
   text-align: left;
@@ -639,8 +639,8 @@ fieldset > p {
       font-size: 1.3rem;
     }
 
-    search label.search-box,
-    search input.search-box {
+    .search-box label,
+    .search-box input {
       margin-top: 2%;
     }
   }
