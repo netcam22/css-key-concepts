@@ -73,7 +73,7 @@ sticky-container {
 }
 
 /* columns*/
-column-container {
+main.column-container {
   box-sizing: border-box;
   display: inline-flex;
   flex-direction: row;
@@ -614,7 +614,7 @@ fieldset > p {
       }
     }
 
-    column-container {
+    main.column-container {
       flex-direction: column;
     }
 
