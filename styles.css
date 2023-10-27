@@ -597,6 +597,11 @@ fieldset > p {
     grid-template-columns: auto auto;
   }
 
+  .grid-six-col h2 {
+    grid-column-end: span 2;
+    margin-left: 0;
+  }
+
   p.grid-item {
     margin-bottom: 5%;
   }
