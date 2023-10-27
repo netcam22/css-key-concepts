@@ -81,7 +81,7 @@ main {
   box-sizing: border-box;
   display: inline-flex;
   flex-direction: row;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: auto auto auto auto;
   padding: 1%;
   margin: 1%;
   align-items: stretch;
@@ -118,6 +118,11 @@ main {
 
 .grid-six-col {
   grid-template-columns: auto auto auto auto auto auto;
+}
+
+.grid-six-col h2 {
+  grid-column-end: span 6;
+  margin-left: 0;
 }
 
 /*grid*/
