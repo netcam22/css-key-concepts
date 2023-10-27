@@ -1,8 +1,10 @@
 :root {
   --strong-orange: rgb(243, 126, 0);
-  --med-orange: rgb(255, 200, 140);
+  --med-strong-orange: rgb(249, 168, 81);
+  --med-orange: rgb(247, 178, 105);
   --mid-orange: rgb(250, 213, 156);
   --strong-blue: rgb(2, 125, 208);
+  --dark-strong-blue: rgb(85, 125, 165);
   --med-blue: rgb(152, 198, 235);
   --mid-blue: rgb(203, 226, 245);
   --light-blue: rgb(224, 237, 249);
@@ -147,14 +149,14 @@ img.grid-item {
   width: 90%;
 }
 
-/*aside, footer, address and top image*/
+/*side section, footer, address and top image*/
 
-aside {
+.sidebar {
   margin: 1%;
 }
 
-aside h2,
-aside h3 {
+.sidebar h2,
+.sidebar h3 {
   background-color: transparent;
   opacity: 1;
   border: 0;
@@ -166,22 +168,22 @@ aside h3 {
   margin: 1%;
 }
 
-aside h2 > a.side-text {
+.sidebar h2 > a.side-text {
   text-decoration: none;
-  color: var(--mid-grey-blue);
+  color: var(--dark-strong-blue);
 }
 
-aside h3 > a.side-text-sub {
+.sidebar h3 > a.side-text-sub {
   display: inline;
-  color: var(--mid-blue);
+  color: var(--mid-grey-blue);
   text-decoration: none;
 }
 
-aside h2 a.side-text:hover {
+.sidebar h2 a.side-text:hover {
   color: var(--strong-orange);
 }
-aside h3 > a.side-text-sub.small:hover {
-  color: var(--mid-orange);
+.sidebar h3 > a.side-text-sub.small:hover {
+  color: var(--med-strong-orange);
 }
 
 footer {
@@ -264,7 +266,7 @@ h2 {
   text-align: left;
   float: left;
   clear: both;
-  color: var(--mid-grey-blue);
+  color: var(--dark-strong-blue);
   text-align: left;
   font-size: 7rem;
   line-height: 7rem;
@@ -581,8 +583,8 @@ fieldset > p {
     padding-left: 10%;
   }
 
-  aside h2,
-  aside h3 {
+  .sidebar h2,
+  .sidebar h3 {
     font-size: 5rem;
     line-height: 5rem;
     float: right;
